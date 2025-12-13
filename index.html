@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Recommender</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>🛒 Product Recommendation</h1>
+        <p class="tagline">Find items similar to what you love</p>
+    </header>
+
+    <main>
+        <!-- Input card -->
+        <section class="card">
+            <label for="product-input">Type or choose a product</label>
+            <input id="product-input" type="text" placeholder="e.g. Amul Taaza Toned Milk" />
+
+            <button id="recommend-btn">Recommend</button>
+        </section>
+
+        <!-- Results area -->
+        <section class="card results" id="results">
+            <h2>Recommended Products</h2>
+            <ul id="results-list">
+                <!-- JS will inject <li> items here -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Placeholder for future script -->
+    <script>
+        /* Example stub—replace with your API call */
+        document.getElementById("recommend-btn").addEventListener("click", async () => {
+            const list = document.getElementById("results-list");
+            list.innerHTML = "";
+
+            // demo static suggestions
+            const demoRecs = [
+                "Tata Salt Iodized 1kg",
+                "Fortune Sunflower Oil 1 L",
+                "Aashirvaad Whole Wheat Atta 5kg"
+            ];
+
+            demoRecs.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                list.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>

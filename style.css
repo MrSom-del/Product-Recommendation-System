@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Inter", sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.tagline {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Layout */
+main {
+    max-width: 720px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.75rem 2rem;
+    margin-top: 1.5rem;
+}
+
+.card label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#product-input {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d0d4da;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+#product-input:focus {
+    border-color: #3b82f6;
+}
+
+button#recommend-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button#recommend-btn:hover {
+    background: #2563eb;
+}
+
+/* Results list */
+.results h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+#results-list {
+    list-style: none;
+}
+
+#results-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eef1f5;
+}
+
+#results-list li:last-child {
+    border-bottom: none;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .card {
+        padding: 1.25rem 1.5rem;
+    }
+}
