@@ -1,0 +1,4 @@
+artefacts/
+__pycache__/
+*.joblib
+*.pkl
